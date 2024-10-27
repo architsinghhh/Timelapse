@@ -1,0 +1,20 @@
+paths:
+  video_dir: "E:/Archit/Myhomeavatar_28to14oct/video"                  # Original video folder
+  output_dir: "E:/Archit/Myhomeavatar_28to14oct/sorted"   # Folder for sorted videos
+  save_dir: "E:/Archit/Myhomeavatar_28to14oct/extracted"                           # Directory to save frames
+  timelapse_frames_dir: "E:/Archit/Myhomeavatar_28to14oct/extracted"   # Directory where frames are saved for timelapse
+  timelapse_output_video: "E:/Archit/timelapse_output.mp4" # Output video file path for timelapsed video
+
+settings:
+  interval_minutes: 5                                                 # Frame capture interval for `frame_capture.py`
+  frame_width: 1920                                                   # Frame width for resizing in `frame_capture.py`
+  frame_height: 1080                                                  # Frame height for resizing in `frame_capture.py`
+  work_start_time: "09:00:00"                                        # Working hours start time for `sort.py`
+  work_end_time: "21:00:00"                                          # Working hours end time for `sort.py`
+  file_extension: "mp4"
+  file_extension: "DAV"
+  timelapse_fps: 30 
+
+patterns:
+  mp4_pattern: "IP Camera24.*_(\\d{8})(\\d{6})_(\\d{8})(\\d{6})"      # Filename pattern for mp4 videos in `sort.py`
+  dav_pattern: "Uni\\+ DVR_ch1_main_(\\d{8})(\\d{6})_(\\d{8})(\\d{6})" # Filename pattern for DAV videos in `sort.py`
